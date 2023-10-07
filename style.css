@@ -1,0 +1,73 @@
+.container-row::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px !important; /* Adjust the value to control the wave height */
+    height: 10px !important; /* Adjust the value to control the wave height */
+    background-image: linear-gradient(to right, #000, #fff, #000); /* Adjust the colors as needed */
+    border-radius: 50%;
+    z-index: -1 !important; /* Ensure it's behind the content */
+}
+
+@font-face {
+  font-family: 'Abril Fatface';
+  src: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes textAnimation {
+  0% { transform: scale(1); opacity: 0; }
+  100% { transform: scale(1.2); opacity: 1; }
+}
+
+.animated-text {
+  animation: textAnimation 1s ease-in-out;
+}
+.image-container {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.zoom-image {
+  transition: transform 0.3s ease;
+}
+
+.zoom-image:hover {
+  transform: scale(1.1);
+}
+
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+
+  .fancy {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background-image: linear-gradient(to right,#ffcc66, #193062);      
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+  
+
+  .yellowGradient {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background-image: linear-gradient(to right,#ffcc66, white);      
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+  

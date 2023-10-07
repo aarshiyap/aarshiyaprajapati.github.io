@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Results</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type = "text/css" href="style.css"/>
+</head>
+<body style="background: black; color: white">
+    <style>
+        html, body {
+            scroll-behavior: smooth;
+        }
+    </style>
+<div class="w-100" style="padding: 10pxs;">
+    
+    <div class="w-100 row d-flex flex-column justify-content-center animated-text" style="height: 900px; align-items: center;">
+        <H1>DEMO</H1>
+        <H1>PROCESS</H1>
+        <H1>EXPLANATION</H1>
+
+        <H1> <label class="fancy" style="text-align: center;" onclick="">Now You Will Go Through The Process Of Prediciton</label> </H1>
+
+    </div>
+    
+    <div class="row w-100 d-flex justify-content-center" style="padding-bottom: 50px;">
+        <a href="#prediction"> 
+            <button type="button" class="btn btn-outline-secondary" onclick="goToFeature()">Go down</button>
+        </a>
+    </div>
+    
+    <script>
+        function goToFeature() {
+            const targetSection = document.getElementById('features');
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+
+    </div>    
+    <div class="w-100 row"  id="prediction" style="height: 900px; padding: 20px; ">
+        <div class = "col d-flex justify-content-center" style="flex-direction: column;">
+
+            <label class="yellowGradient" style="font-size: 4em;">PREDICTION </label>
+            <H3>For this spcific person, <br> the AI predicts the person will make a claim of : </H3>
+    </div>
+
+    <div class="col d-flex justify-content-center" style="flex-direction: column;">
+           <label id="claims" class="fancy" style="font-size: 5em;"></label>
+        </div>
+    </div>
+
+    <div class="row w-100 d-flex justify-content-center" style="padding-bottom: 50px;">
+        <a href="#explanation"> 
+            <button type="button" class="btn btn-outline-secondary" onclick="goToFeature()">Go down</button>
+        </a>
+    </div>
+    
+
+        <div class="w-100" style="height: auto; text-align: center;" id="explanation">
+
+            <label class="fancy"  style="font-size: 4em;">PROCESS </label>
+
+            <H2> You Might Be Wondering How This Value Was Mysteriously Predicted ? </H2>
+            <H2> We take these three steps ! </H2>
+            <img src ="Img/pipelineImg.png" class = "img-fluid" style="height: 700px;"/>
+        </div>
+
+            
+    <div class="row w-100 d-flex justify-content-center" style="padding-bottom: 50px;">
+        <a href="#first"> 
+            <button type="button" class="btn btn-outline-secondary" onclick="goToFeature()">Go down</button>
+        </a>
+    </div>
+
+        <div class="w-100" style="height: auto; text-align: center;padding: 50px;" id="first">
+
+            <label class="fancy"  style="padding-bottom:20px ;padding-top: 20px; font-size: 4em;">Data Collection | Data Standardization </label>
+
+            <H2 style="padding-bottom: 20px;"> First : We converted every input into a standard form using the Z-standard formula </H2>
+            <table class="table" id="conversionTable" style="color: white; padding: 100px; padding-bottom: 020;">
+                <thead>
+                <tr>
+                    <th scope="col">Parameters</th>
+                    <th scope="col">Actual/Average Values</th>
+                    <th scope="col">Z-score Normalized Values</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Age</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th scope="row">Bmi</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th scope="row">Bloodpressure</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th scope="row">Diabetic</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th scope="row">ChildNum</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th scope="row">Smoker</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Gender</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Region</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>    
+                </tbody>
+            </table>
+
+            <img src="Img/zscore.png" class = "img-fluid" style="height: 150px;"/>
+
+        </div>
+
+          <!--ZSCORE FORMULA NEEDED-->
+
+
+
+        <div class="row w-100 d-flex justify-content-center" style="padding-top: 0px; padding-bottom: 40px;">
+            <a href="#second"> 
+                <button type="button" class="btn btn-outline-secondary" onclick="goToFeature()">Go down</button>
+            </a>
+        </div>
+
+        <div class="w-100 " style="height: 400px; text-align: center;" id = "second">
+            <label class="fancy"  style="padding-bottom:20px ;padding-top: 300px; font-size: 4em;">Data Prediction </label>
+
+            <H2> Second: We trained a linear regression model using over a thousand Health Insurance Claims data. <br> Then used the pre-built linear regression model which is given by the function below.</H2>
+            <img src = "Img/Linear Equation.png" class="img-fluid"/>
+
+        </div>
+
+        <div class="row w-100 d-flex justify-content-center" style="padding-top: 410px; padding-bottom: 40px;">
+            <a href="#second2"> 
+                <button type="button" class="btn btn-outline-secondary" onclick="goToFeature()">Go down</button>
+            </a>
+        </div>
+
+        <div class="w-100 " style=" padding-top: 200px; text-align: center;" id="second2">
+            <H2> To use this function we will need the input which we took from the user and weights which was extracted from the model we built. As you can see below are the weights. </H2>
+        </div>
+
+        <div class = "w-100" style="padding: 50px; text-align: center;">
+
+            <table class="table" style="color: white;">
+                <thead>
+                <tr>
+                    <th scope="col">Parameters</th>
+                    <th scope="col">Weights</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Age</th>
+                    <td>0.02395204 </td>
+                </tr>
+                <tr>
+                    <th scope="row">Gender</th>
+                    <td> 0.00855673</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bmi</th>
+                    <td> 0.15993287</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bloodpressure</th>
+                    <td> 0.22657713</td>
+                </tr>
+                <tr>
+                    <th scope="row">Diabetic</th>
+                    <td> -0.03026697</td>
+                </tr>
+                <tr>
+                    <th scope="row">ChildNum</th>
+                    <td>0.06236328 </td>
+                </tr>
+                <tr>
+                    <th scope="row">Smoker</th>
+                    <td>1.6927791 </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Region</th>
+                    <td>0.04902264</td>
+                </tr>    
+
+                <tr>
+                    <th scope="row">Intercept</th>
+                    <td>-0.52172069</td>
+                </tr>   
+
+                </tbody>
+            </table>
+        
+        </div>
+
+
+        </div>
+
+        <div class="row w-100 d-flex justify-content-center" style="padding-bottom: 50px;">
+            <a href="#last"> 
+                <button type="button" class="btn btn-outline-secondary" onclick="goToFeature()">Go down</button>
+            </a>
+        </div>
+
+        <div class="w-100 row " style=" margin-top: 200px; height: 250px; text-align: center; padding: 50px;"id="last" >
+            <H2>Finally, we use this function and weights to the appropriate features and add the intercept to find the predicted value. This value gives us the predicted claims in a standarized form. <br> Then we destandarize the value recievved from the equation above using the formula below. </H2>
+        </div>
+
+
+        <label id="formulaApplication" class="yellowGradient" style="font-size: 2em; padding-left: 50px;"> 
+        </label>
+
+        <div class="" style="height: 500px; text-align: center; padding: 50px;font-family: 'rocher'" >
+            <label style="font-size: 7em"> TASK ACCOMPLISHED </label> 
+        </div>
+
+</div>
+
+
+  <script src="predictionsParams.js"></script>
+  <script src="predictionsPage.js"></script>
+
+</body>
+</html>
