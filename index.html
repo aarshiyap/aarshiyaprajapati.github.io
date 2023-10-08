@@ -18,12 +18,12 @@
   <!-- This is the landing page -->
 
 
-  <div class="d-flex justify-content-center align-items-center centered-container w-100 animated-text" style=" height: 1000px; background-color:#fae07e ; display: 
+  <div class="d-flex justify-content-center align-items-center centered-container w-100 animated-text" style=" max-height: 1000px; min-height: 1000px; background-color:#fae07e ; display: 
     flex; align-items: center; justify-content: center; text-align: center;">
     <div>
       <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> IT Intern Project For
         Trustage. <br> Data Development and Application Developer </h1>
-      <img src="Company Logo.png" class="padding: 50px i.img-fluid. max-width: 100%;  height: auto;"
+      <img src="Company Logo.png" class="padding: 50px i.img-fluid. width: auto;  height: auto;"
         alt="Responsive image" />
 
       <div class="d-flex" style="justify-content: center;padding-top: 100px;justify-content : space-between">
@@ -87,16 +87,16 @@
       <div class="col d-flex flex-column justify-content-center align-items-center">
         <h3>Linear Regression</h3>
         <a href="#linearRegressionSection" onclick="smoothScroll(event)">
-          <img src="Linear_Regression.png" class="img-fluid rounded-circle"
-            style="width: 180px; height: 180px; border: 1px solid black; border-radius: 50%;" alt="Claim Image" />
+          <img src="claim.png" class="img-fluid rounded-circle"
+            style="min-width:180px; min-height: 180px; max-width: 180px ; max-height: 180px; border: 1px solid black; border-radius: 50%;" alt="Claim Image" />
         </a>
       </div>
 
       <div class="col d-flex flex-column justify-content-center align-items-center">
         <h3>Neural Network</h3>
         <a href="#neuralNetworkDisplay" onclick="smoothScroll(event)">
-          <img src="Neural_Network.png" class="img-fluid rounded-circle"
-            style="width: 180px; height: 180px; border: 1px solid black; border-radius: 50%;" alt="Claim Image" />
+          <img src="claim.png" class="img-fluid rounded-circle"
+            style="min-width:180px; min-height: 180px; max-width: 180px ; max-height: 180px; border: 1px solid black; border-radius: 50%;" alt="Claim Image" />
         </a>
       </div>
 
@@ -104,7 +104,7 @@
         <h3>Clustering</h3>
         <a href="#clusteringDisplay" onclick="smoothScroll(event)">
           <img src="claim.png" class="img-fluid rounded-circle"
-            style="width: 180px; height: 180px; border: 1px solid black; border-radius: 50%;" alt="Claim Image" />
+            style="min-width:180px; min-height: 180px; max-width: 180px ; max-height: 180px; border: 1px solid black; border-radius: 50%;" alt="Claim Image" />
         </a>
       </div>
 
@@ -148,16 +148,11 @@
 
   </script>
 
-
-
   <!-- This is the Linera Regression page FUNDAMENTAL ANALYSIS -->
 
 
-
-
-
   <div class="w-100 " id="linearRegressionSection" style="padding-top: 50px;">
-    <div class="row" style="height: 700px;">
+    <div class="row" style="height: auto;">
       <div class="col d-flex justify-content-center align-items-center" style="border-right: 1px solid black; ">
 
         <img src="Linear_Regression.png" class="img-fluid zoom-image" id="scroll" style="width: 90%; height: 90%;"
@@ -180,9 +175,6 @@
           and the predicted outcome.
 
         </label>
-
-
-
       </div>
     </div>
   </div>
@@ -190,9 +182,10 @@
   <!-- This is the Neural Network  page -->
 
 
+<div class="row">
 
   <div class="w-100" id="neuralNetworkDisplay" style="border-bottom: 1px solid black;">
-    <div class="row" style="height: 700px;">
+    <div class="row" style="max-height: auto;">
       <div class="col" style="text-align: center; border-right: 1px solid black; background-color: rgb(227, 229, 232)">
         <h1 style="padding: 20px;">Neural Network</h1>
 
@@ -221,10 +214,7 @@
           modeling complex relationships among the input variables, demonstrating its effectiveness in making
           predictions.
         </label>
-
       </div>
-
-
 
       <div class="col d-flex justify-content-center align-items-center" style="text-align: center;">
         <img src="Neural_Network.png" class="img-fluid zoom-image" style="width: 90%; height: 90%;"
@@ -232,14 +222,12 @@
       </div>
     </div>
   </div>
-
+</div>
   <!-- This is the Clustering Algo  page -->
 
 
-
-
   <div class="w-100 d-flex justify-content-center align-items-center" id="clusteringDisplay"
-    style="height: 500px; background-color: lightblue;">
+    style=" background-color: lightblue;">
 
     <div style="text-align: center; ">
       <h1>Clustering Algorithms</h1>
@@ -256,8 +244,6 @@
       </h3>
     </div>
   </div>
-
-
 
   <div class="w-100">
     <div class="row">
@@ -278,7 +264,7 @@
 
 
   <div class="w-100">
-    <div class="row" style="height: 500px;">
+    <div class="row" style="height: auto;">
       <div class="col">
         <img src="children.png" class="img-fluid zoom-image" onclick="redirectToPage('childrenPng')" />
       </div>
